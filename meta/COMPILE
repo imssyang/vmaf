@@ -1,0 +1,13 @@
+
+pip3 install Ninja
+pip3 install meson
+pip3 install Cython
+pip3 install numpy
+
+
+vi vmaf-2.3.1/Makefile
+  # 在meson中增加--prefix选项指定安装路径
+  meson setup libvmaf/build libvmaf --prefix /opt/vmaf --buildtype release -Denable_float=true
+
+make
+make install
