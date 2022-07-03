@@ -2,3 +2,5 @@ archive
 bin
 include
 lib
+model/*
+!model/*.json
